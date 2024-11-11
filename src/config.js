@@ -1,0 +1,4 @@
+// src/config.js
+export const tokenWAAPI =
+  "EAAHSEn4v16IBO2ZBHWwlkn4hs6XYZAl0Fbx9HWTh1e17Hh8tuIVH9BtfOGFTraP3tzpQmPG9uqIvZCiZCZAmFeVZCLwZAZAWABiMbq3f5hZA1u7jK1a8BlB2fQYuA8HSqdbxqTKACwZAXK5gokBS2vdyGTu99xrZAAHLpibXMsTZBvEbknai4A4EmVMuUE4lChcD4616xRabuLD9cgluJKoEVJbMpnKBxtzVloiZChEkX8rbF";
+export const phoneNumberId = "484482004747173"; // Ganti dengan nomor ID WhatsApp Anda
