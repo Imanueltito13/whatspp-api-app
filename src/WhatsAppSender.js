@@ -4,7 +4,6 @@ import { tokenWAAPI, phoneNumberId } from "./config";
 
 const WhatsAppSender = () => {
   const [phoneNumbers, setPhoneNumbers] = useState("");
-  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState([]);
   const [batchProgress, setBatchProgress] = useState(0);
@@ -26,18 +25,19 @@ const WhatsAppSender = () => {
     return phoneRegex.test(number.replace(/\D/g, ""));
   };
 
-  // Kirim pesan ke satu nomor
+  // Kirim pesan ke satu nomor menggunakan template
   const sendSingleMessage = async (phoneNumber) => {
     const formattedPhone = formatPhoneNumber(phoneNumber);
     const url = `https://graph.facebook.com/v15.0/${phoneNumberId}/messages`;
     const data = {
       messaging_product: "whatsapp",
-      recipient_type: "individual",
       to: formattedPhone,
-      type: "text",
-      text: {
-        preview_url: false,
-        body: message,
+      type: "template",
+      template: {
+        name: "hello_world",
+        language: {
+          code: "en_US",
+        },
       },
     };
 
@@ -111,7 +111,6 @@ const WhatsAppSender = () => {
   const validateForm = () => {
     return (
       phoneNumbers.trim().length > 0 &&
-      message.trim().length > 0 &&
       phoneNumbers.split(",").some((num) => validateSingleNumber(num.trim()))
     );
   };
@@ -137,19 +136,6 @@ const WhatsAppSender = () => {
           <p className="text-xs text-gray-500 mt-1">
             Format: 08xxx atau 62xxx, pisahkan dengan koma untuk multiple nomor
           </p>
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Pesan
-          </label>
-          <textarea
-            placeholder="Ketik pesan Anda di sini..."
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-32"
-            disabled={loading}
-          />
         </div>
 
         <button
