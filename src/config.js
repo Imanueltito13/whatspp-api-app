@@ -1,4 +1,4 @@
 // src/config.js
 export const tokenWAAPI =
-  "EAAHSEn4v16IBO2ZBHWwlkn4hs6XYZAl0Fbx9HWTh1e17Hh8tuIVH9BtfOGFTraP3tzpQmPG9uqIvZCiZCZAmFeVZCLwZAZAWABiMbq3f5hZA1u7jK1a8BlB2fQYuA8HSqdbxqTKACwZAXK5gokBS2vdyGTu99xrZAAHLpibXMsTZBvEbknai4A4EmVMuUE4lChcD4616xRabuLD9cgluJKoEVJbMpnKBxtzVloiZChEkX8rbF";
-export const phoneNumberId = "484482004747173"; // Ganti dengan nomor ID WhatsApp Anda
+  "EAAHSEn4v16IBO7HxwZAnbHoQbFIwPGSbyZBvBjcRUdZCa9gSyCwWTxDrDZAnUu8lg7ZBxKEccPMljoYNBnZCu7qoGLopjZBKz0Qjj9ha7BDXVZBw13kaQ52lHs9sZBztZBvG6ymybtk8ZB2r1O7sOqj7LKfmyTvtylKeSJkKqfPQMgErVZC1IW92nAjpKUPyB5vUVbEz8n3ByihVnwZBfXRneTPXHVQ2FBykZD";
+export const phoneNumberId = "333098329898197"; // Ganti dengan nomor ID WhatsApp Anda
