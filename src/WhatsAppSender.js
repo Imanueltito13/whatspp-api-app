@@ -118,7 +118,7 @@ const WhatsAppSender = () => {
   return (
     <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
       <h1 className="text-2xl font-bold mb-6 text-gray-800">
-        Kirim Pesan WhatsApp Massal
+        Kirim Pesan WhatsApp
       </h1>
 
       <div className="space-y-4">
